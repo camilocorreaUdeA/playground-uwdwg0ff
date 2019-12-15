@@ -153,10 +153,10 @@ int NumStringToInt(string numero)
 
 int main()
 {
-    string number = "45678945";
-	cout<<NumStringToInt(number)<<endl;
-	string number = "-375907";
-	cout<<NumStringToInt(number)<<endl;
+    string number1 = "45678945";
+	cout<<NumStringToInt(number1)<<endl;
+	string number2 = "-375907";
+	cout<<NumStringToInt(number2)<<endl;
 }
 ```
 # Aplicaciones de la programación
