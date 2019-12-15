@@ -219,8 +219,8 @@ void cifraData(int arr[], int rondas)
 
 int main()
 {
-    int trama[6]={1,45,92,216,28,63};
-    cifraData(trama, 3);
+    int trama[6]={1,45,92,216,28,63}; //Trama de ejemplo
+    cifraData(trama, 3); // Llamado de ejemplo
     
     return 0;
 }
