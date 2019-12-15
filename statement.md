@@ -148,8 +148,7 @@ using namespace std;
 
 int NumStringToInt(string numero)
 {
-	
-	
+	// Complete esta función siguiendo las recomendaciones anteriores
 }
 
 int main()
@@ -159,6 +158,7 @@ int main()
 	string number = "-375907";
 	cout<<NumStringToInt(number)<<endl;
 }
+```
 
 # Advanced usage
 
