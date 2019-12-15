@@ -128,7 +128,7 @@ corchetes [] para acceder individualmente a las letras -> Ejemplo: string hh = "
 Dato 5: Recuerde que un número está escrito en el sistema decimal donde cada cifra a la izquierda es 10 veces mayor que la siguiente
 cifra a la derecha.
 Ejemplo: '111' el primer '1' es 10 veces mayor que el segundo '1' y este es a su vez 10 veces mayor que el último 1. Es decir el número en
-string '111' se puede convertir a un entero como la suma de 1 + 1*10 + 1*100
+string '111' se puede convertir a un entero como la suma de 1 + 1x10 + 1x100
 
 ```C++ runnable
 #include<iostream>
