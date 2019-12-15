@@ -111,6 +111,45 @@ int main()
 } 
 ```
 
+# Conversión entre distintos tipos de datos
+
+La función NumSringToInt es una función que debe convertir un número escrito en letras (cadena de caracteres) 
+en un número de tipo entero (int), usted debe agregar las líneas de código necesarias para implementar dicha funcionalidad.
+Se debe garantizar que se convierten números enteros positivos y negativos.
+Se debe garantizar que la función no intente convertir un número que sobrepasa la capacidad del tipo de dato int.
+Utilice el tipo de dato "string" en caso de necesitar alguna variable para almacenar cadenas de caracteres.
+Dato1: La representación en caracter (ASCII) de un número natural (0 al 9) es igual al número + 48 (o bien 0x30 en hexa)
+Ejemplo: '9' = 9 + 48 = 0x09 + 0x30
+Dato2: Para verificar la longitud de la cadena de caracteres que representa un número puede usar el operador size()
+Ejemplo: string numero = "123456" -> numero.size() da como resultado 6
+Dato3: Solo puede utilizar declaración de variables, operadores de C++ y estructuras de control para codificar la solución.
+Dato4: Recuerde que las cadenas de caracteres (strings) se comportan como arrays de tipo char, se puede utilizar el operador
+corchetes [] para acceder individualmente a las letras -> Ejemplo: string hh = "Hola"; hh[1] es la letra 'o'
+Dato 5: Recuerde que un número está escrito en el sistema decimal donde cada cifra a la izquierda es 10 veces mayor que la siguiente
+cifra a la derecha.
+Ejemplo: '111' el primer '1' es 10 veces mayor que el segundo '1' y este es a su vez 10 veces mayor que el último 1. Es decir el número en
+string '111' se puede convertir a un entero como la suma de 1 + 1*10 + 1*100
+
+```C++ runnable
+#include<iostream>
+#include<string>
+
+using namespace std;
+
+int NumStringToInt(string numero)
+{
+	
+	
+}
+
+int main()
+{
+    string number = "45678945";
+	cout<<NumStringToInt(number)<<endl;
+	string number = "-375907";
+	cout<<NumStringToInt(number)<<endl;
+}
+
 # Advanced usage
 
 If you want a more complex example (external libraries, viewers...), use the [Advanced C++ template](https://tech.io/select-repo/598)
