@@ -24,6 +24,54 @@ int main()
 }
 ```
 
+```C++ runnable
+// Codigo número 2
+#include <iostream>
+
+using namespace std;
+
+int main() 
+{
+    int i = 1, j = 2;
+    
+    if(i > j && j > i)
+        i++;
+    if(i > j || j > i)
+        j++;
+    if(i | j)
+        i++;
+    if(i & j)
+        j++;
+    
+    cout<<i * j<<endl;
+    return 0;
+}
+```
+
+```C++ runnable
+// Codigo número 3
+#include <iostream>
+
+using namespace std;
+
+int main() 
+{
+    for(int i = 0; i < 4; ++i)
+    {
+        switch(i)
+        {
+            case 0: cout<<"0";
+            case 1: cout<<"1"; continue;
+            case 2: cout<<"2"; break;
+            default: cout<<"D"; break;
+        }
+        
+        cout<<"*"<<endl;
+    }
+    return 0;
+}
+```
+
 # Advanced usage
 
 If you want a more complex example (external libraries, viewers...), use the [Advanced C++ template](https://tech.io/select-repo/598)
