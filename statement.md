@@ -200,7 +200,9 @@ Numero de rondas de actualizacion: 3
 
 Trama cifrada que se obtiene: 
 	Ronda 1: {18,93,-171,120,153,29}
+	
 	Ronda 2: {-64,-153,-27,-18,91,171}
+	
 	Ronda 3: {324,-91,-135,64,-189,27}  Esta es la trama final cifrada
 
 ```C++ runnable
