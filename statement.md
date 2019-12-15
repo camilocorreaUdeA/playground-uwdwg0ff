@@ -66,7 +66,7 @@ int main()
             default: cout<<"D"; break;
         }
         
-        cout<<"*"<<endl;
+        cout<<"*";
     }
     return 0;
 }
