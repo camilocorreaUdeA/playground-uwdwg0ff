@@ -198,7 +198,8 @@ Ejemplo:
 Trama: {1,45,92,216,28,63}
 Numero de rondas de actualizacion: 3
 
-Trama cifrada que se obtiene: 
+Trama cifrada que se obtiene:
+
 	Ronda 1: {18,93,-171,120,153,29}
 	
 	Ronda 2: {-64,-153,-27,-18,91,171}
