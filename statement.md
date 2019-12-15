@@ -196,6 +196,7 @@ proceso de cifrado en la trama (rondas de actualización).
 Ejemplo:
 
 Trama: {1,45,92,216,28,63}
+
 Numero de rondas de actualizacion: 3
 
 Trama cifrada que se obtiene:
