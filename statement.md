@@ -159,6 +159,44 @@ int main()
 	cout<<NumStringToInt(number2)<<endl;
 }
 ```
+
+# ¿Cuál línea de código se ejecuta el mayor número de veces?
+
+Analice el siguiente fragmento de código en C++ y luego identifique cuál de sus líneas de código es la que se ejecuta el mayor número de veces cuando se corre el programa.
+
+```C++ runnable
+#include<iostream>
+#include<string>
+
+using namespace std;
+
+int testFunction(int num1, int num2)
+{
+	int suma_pre = 0;
+	
+	while(num2 >= 0)
+	{
+	    int cuenta = 0;
+	    
+	    while(cuenta <= num2)
+	    {
+	        suma_pre += num1;
+	        ++cuenta;
+	    }
+	    
+	    --num2;
+	}
+	
+	return suma_pre;
+}
+
+int main()
+{
+    int resultado = testFunction(3, 10);
+    std::cout << "Resultado: " << resultado << std::endl;
+}
+```
+
 # Aplicaciones de la programación
 
 Desarrolle una aplicacion de cifrado sencillo para una trama de datos de tipo entero.
