@@ -200,10 +200,10 @@ int main()
 
 Codifique en C++ la función inforMatic de modo que si el parámetro de entrada `num` es múltiplo de 3 se debe imprimir en pantalla: Infor. Si `num` es múltiplo de 5 se debe imprimir: Matic. Si `num` es múltiplo de 3 y 5 al mismo tiempo entonces debe se debe imprimir: InforMatic. En cualquier otro caso debe imprimir el valor de `num`.
 
-Ejm: num = 6  -> Infor
-     num = 15 -> InforMatic
-     num = 20 -> Matic
-     num = 8  -> 8
+Ejm: <ul><li>num = 6  -> Infor</li>
+     <li>num = 15 -> InforMatic</li>
+     <li>num = 20 -> Matic</li>
+     <li>num = 8  -> 8</li></ul>
 
 ```C++ runnable
 #include<iostream>
