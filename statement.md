@@ -222,6 +222,50 @@ int main()
 }
 ```
 
+# Decodificador de permisos en Linux
+
+Diseñe una función para decodificar secuencias de permisos en el sistema operativo Linux. La función recibe un string (cadena de caracteres) con los permisos que se le deben entregar a determinado archivo o aplicación (permisos de escritura: w, de lectura: r, de ejecución: x). Un permiso en linux se representa como un sting de 9 caracteres en el cual los 3 primeros caracteres corresponden a los permisos que tiene el usuario del equipo, los 3 caracteres siguientes a los permisos del grupo al cual pertenece el usuario y los 3 últimos a los permisos para cualquier otro usuario. 
+
+Por ejemplo un permiso para que un archivo pueda ser leído o modificado por cualquier usuario del equipo sería así: `rw-rw-rw-`
+
+Un permiso para que solo el usuario del equipo y los de su mismo grupo puedan ejecutar o "leer" cierto ejecutable sería así: `r-xr-x---`
+
+El sistema operativo Linux prefiere que le envien los permisos codificados en un número de 3 cifras y no en un string de caracteres. Para esto es necesario convertir los caracteres al valor númerico que Linux "entiende". El sistema de conversión es el siguiente:
+
+<ul><li>r : 4</li>
+<li>w : 2</li>
+<li>x : 1</li>
+<li>- : 0</li></ul>
+
+Cada subconjunto de 3 caracteres contiguos (es decir, los permisos para usuario, grupo y otros) se convierte a sus valores numéricos y se suman para obtener un único digito para representar los permisos de ese usuario. Ejemplo: El permiso de archivo que vimos anteriormente `rw-rw-rw-` se debe codificar como 666, y el permiso de la aplicación `r-xr-x---` se codifica como 550.
+
+La función decodePermits recibe como parametro de entrada un string que representa los permisos en caracteres y debe retornar un número entero con los permisos decodificados en su representación numérica.
+
+```C++ runnable
+#include<iostream>
+#include<string>
+
+using namespace std;
+
+int decodePermits(const string& permits)
+{
+	// Complete esta función siguiendo las recomendaciones anteriores
+}
+
+int main()
+{
+    string permit1 = "rw-r--r--";
+    string permit2 = "rwxr-x--x";
+    string allpermits = "rwxrwxrwx";
+    
+    std::cout << decodePermits(permit1) << std::endl;
+    std::cout << decodePermits(permit2) << std::endl;
+    std::cout << decodePermits(allpermits) << std::endl;
+    
+    return 0;
+}
+```
+
 
 # Aplicaciones de la programación
 
