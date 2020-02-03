@@ -162,11 +162,10 @@ int main()
 
 # ¿Cuál línea de código se ejecuta el mayor número de veces?
 
-Analice el siguiente fragmento de código en C++ y luego identifique cuál de sus líneas de código es la que se ejecuta el mayor número de veces cuando se corre el programa.
+Analice la función testFunction y luego identifique cuál de sus líneas de código es la que se ejecuta el mayor número de veces cuando se corre el programa.
 
 ```C++ runnable
 #include<iostream>
-#include<string>
 
 using namespace std;
 
