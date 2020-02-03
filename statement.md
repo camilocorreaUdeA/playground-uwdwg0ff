@@ -196,6 +196,28 @@ int main()
 }
 ```
 
+# <i>InforMatic!</i>
+
+Codifique en C++ la función inforMatic de modo que si el parámetro de entrada `num` es múltiplo de 3 se debe imprimir en pantalla: Info. Si `num` es múltiplo de 5 se debe imprimir: Matic. Si `num` es múltiplo de 3 y 5 al mismo tiempo entonces debe se debe imprimir: InforMatic. En cualquier otro caso debe imprimir el valor de `num`.
+
+```C++ runnable
+#include<iostream>
+
+using namespace std;
+
+void inforMatic(int num)
+{
+	// Complete esta función siguiendo las recomendaciones anteriores
+}
+
+int main()
+{
+    for(int i=0; i<21; ++i)
+        inforMatic(i);
+}
+```
+
+
 # Aplicaciones de la programación
 
 Desarrolle una aplicacion de cifrado sencillo para una trama de datos de tipo entero.
